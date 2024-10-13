@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background: rgb(230, 51, 35);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+}
+ 
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: rgb(255, 190, 37);
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: rgb(255, 190, 37);
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+background: rgb(149, 7, 7);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header{
+    height: 100vh !important;
+    background: url(imagen2.png) no-repeat center;
+    background-size: cover;
+    padding: 0 100px; 
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+
+}
+
+
+.p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: rgb(231, 12, 12);
+    padding: 0 100px;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 40px !important;
+    padding: 10px 40px ;
+    border: 3px solid rgb(149, 7, 7);
+    color: rgb(255, 190, 37);
+    text-decoration: none;
+    background: rgb(230, 51, 35);
+    
+
+}
+
+.btn:hover {
+   background: rgb(149, 7, 7);
+}
+
+.btn-hover {
+    display: flex;
+    
+}
+
+.btn-home a {
+    margin: 0 10px;
+}
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+
+.NOSOTROS {
+    height: 100vh !important; /* Establece la altura de la sección en el 100% de la altura de la ventana del navegador */
+    background: url(imagen1.png); /* Establece la imagen de fondo de la sección usando 'imagen1.png' */
+    background-size: cover; /* Asegura que la imagen de fondo cubra toda la sección, ajustando su tamaño según sea necesario */
+    display: flex; /* Utiliza el modelo de caja flexible (Flexbox) para organizar el contenido dentro de la sección */
+    flex-direction: column; /* Coloca los elementos dentro de la sección en una columna (uno debajo del otro) */
+    justify-content: center; /* Centra los elementos verticalmente en el medio de la sección */
+    align-items: center; /* Centra los elementos horizontalmente en el medio de la sección */
+    padding: 0 100px; /* Añade un espacio de 100px a la izquierda y a la derecha dentro de la sección */
+}
+
+.galeria {
+    display: flex; /* Alinea las imágenes en fila */
+    justify-content: center; /* Centra la galería horizontalmente */
+    flex-wrap: wrap; /* Permite que las imágenes salten a la siguiente fila si no hay suficiente espacio */
+}
+
+.foto {
+    margin: 10px; /* Añade espacio entre las imágenes */
+    box-shadow: 0 4px 8px 0 rgb(149, 7, 7), 0 6px 20px 0 rgb(0, 0, 0);
+    width: 300px; /* Establece un ancho fijo para las imágenes */
+    text-align: center; /* Centra el texto debajo de las imágenes */
+}
+
+.foto img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor .foto */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.PRODUCTOS {
+    padding: 50px 20px; /* Espacio interno */
+    background: rgb(255, 190, 37); /* Color de fondo para diferenciar la sección */
+    height: auto; /* Ajusta la altura automáticamente según el contenido */
+    color: #000000; /* Color del texto en la sección PRODUCTOS */
+}
+
+
+div.galeria:hover{
+    transform: rotate(-3deg);
+
+}
+
+.contact {
+    padding: 60px 0;
+    background: rgb(230, 51, 35);
+
+}
+
+
+.form-content {
+    width: 100%;
+    max-width: 280px; 
+    margin: 15px auto;
+    background-color:rgb(255, 190, 37);
+    padding: 8px; 
+    border-radius: 6px;
+}
+
+.form-content label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px; 
+    color: rgb(149, 7, 7);
+    font-size: 13px; 
+}
+
+.form-content input,
+.form-content textarea {
+    width: 80%;
+    padding: 5px; 
+    margin-bottom: 8px; 
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 13px; 
+    font-family: 'Arial', sans-serif;
+}
+
+.form-content input:focus,
+.form-content textarea:focus {
+    outline: none;
+    border-color: rgb(230, 51, 35);
+    box-shadow: 0 0 3px rgba(230, 51, 35, 0.4); 
+}
+
+.form-content .btn {
+    padding: 10px;
+    font-size: 13px; 
+    width: 85%;
+    border: none;
+    background-color: rgb(230, 51, 35);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.form-content .btn:hover {
+    background-color: rgb(149, 7, 7);
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    color: white;
+    
+}
+
+footer p {
+    text-align: center;
+    padding: 50px;
+    font-size: 18px ;
+}
+
